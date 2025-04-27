@@ -22,23 +22,42 @@ const timer = setInterval(function() {
 // Appointment Form Submission
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('appointment-form');
+  const loading = document.getElementById('loading');
+  const successMessage = document.getElementById('success-message');
+  const errorMessage = document.getElementById('error-message');
+  const submitButton = document.getElementById('submit-button');
 
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    loading.style.display = 'block';
+    submitButton.disabled = true;
+    successMessage.style.display = 'none';
+    errorMessage.style.display = 'none';
 
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-
-      if (name && email && message) {
-        alert("Thank you " + name + "! Your appointment request has been sent.\nWe'll contact you shortly.");
-        
-        // Reset the form
-        form.reset();
-      } else {
-        alert("Please fill all the fields.");
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
       }
+    }).then(response => {
+      loading.style.display = 'none';
+      submitButton.disabled = false;
+
+      if (response.ok) {
+        successMessage.style.display = 'block';
+        form.reset();
+        setTimeout(() => {
+          window.location.href = "thankyou.html"; 
+        }, 2000); // 2 seconds baad thank you page pe redirect
+      } else {
+        errorMessage.style.display = 'block';
+      }
+    }).catch(error => {
+      loading.style.display = 'none';
+      submitButton.disabled = false;
+      errorMessage.style.display = 'block';
     });
-  }
+  });
 });
