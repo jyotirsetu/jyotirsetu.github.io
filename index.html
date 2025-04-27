@@ -87,17 +87,32 @@
     <p>Specialized in Career, Matchmaking, Kal Sarp Dosh, Pitra Dosh, Health, Financial Problems and more.</p>
   </section>
 
-  <!-- Appointment Form -->
-  <section class="appointment" id="appointment">
-    <h2>Book Your Appointment</h2>
-    <form id="appointment-form" action="https://formspree.io/f/mldbdard" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="text" name="phone" placeholder="Phone Number" required>
-      <textarea name="message" placeholder="Your Concern" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+ <!-- Appointment Form -->
+<section class="appointment" id="appointment">
+  <h2>Book Your Appointment</h2>
+  <form id="appointment-form" action="https://formspree.io/f/mldbdard" method="POST" onsubmit="return submittedForm();">
+    
+    <!-- Hidden Inputs -->
+    <input type="hidden" name="_subject" value="New Appointment Request from JyotirSetu!">
+    <input type="hidden" name="_captcha" value="false"> <!-- Optional: Disable captcha -->
+    
+    <!-- Visible Form Fields -->
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <textarea name="message" placeholder="Your Concern" required></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<!-- Success Message Script -->
+<script>
+  function submittedForm() {
+    alert("✅ Thank you for choosing JyotirSetu! Our Astro Expert will get back to you shortly.");
+    return true; // Important: Allow the form to actually submit after alert
+  }
+</script>
 
   <!-- Footer -->
   <footer>
