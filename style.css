@@ -1,108 +1,197 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body & Overlay */
 body, html {
   height: 100%;
   font-family: 'Poppins', sans-serif;
   color: white;
-  background-color: #0a0a23;
 }
 
-#backgroundVideo {
+#background-video {
   position: fixed;
-  top: 0;
-  left: 0;
+  right: 0;
+  bottom: 0;
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-  opacity: 0.4;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
+.overlay {
+  background: rgba(0, 0, 50, 0.6);
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .logo {
-  font-size: 30px;
-  font-weight: bold;
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
+header h1 {
+  font-size: 3rem;
+  color: #00BFFF;
 }
 
+header p {
+  font-size: 1.2rem;
+  color: silver;
+}
+
+/* Hero Section */
 .hero {
   text-align: center;
-  margin-top: 80px;
+  margin: 50px 20px;
 }
 
-.hero h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
+.hero h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
+#countdown {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Button */
 .btn {
-  padding: 10px 20px;
-  background: #f39c12;
+  background-color: #00BFFF;
   color: white;
-  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
   text-decoration: none;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
 }
 
-section {
-  padding: 80px 20px;
+.btn:hover {
+  background-color: #1E90FF;
+}
+
+/* Services */
+#services {
+  margin: 50px 0;
   text-align: center;
 }
 
-.service-container {
+#services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: silver;
+}
+
+.services-grid {
   display: flex;
-  justify-content: center;
-  gap: 40px;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-10px);
 }
 
 .service img {
-  width: 100px;
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.profile-pic {
-  width: 200px;
+.service h3 {
+  font-size: 1.1rem;
+}
+
+/* Profile */
+#profile {
+  text-align: center;
+  margin: 50px 20px;
+}
+
+.profile-img {
+  width: 150px;
   border-radius: 50%;
-  margin: 20px 0;
+  margin: 20px auto;
+  display: block;
+  border: 2px solid #00BFFF;
 }
 
-form {
+/* Appointment Form */
+#appointment {
+  margin: 50px 20px;
+}
+
+#appointment h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#appointment-form {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  gap: 15px;
+  max-width: 500px;
   margin: auto;
 }
 
-form input, form textarea {
-  margin: 10px 0;
+#appointment-form input, #appointment-form textarea {
   padding: 10px;
-  border-radius: 5px;
   border: none;
+  border-radius: 10px;
 }
 
+#appointment-form button {
+  background-color: #00BFFF;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#appointment-form button:hover {
+  background-color: #1E90FF;
+}
+
+.form-note {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* Footer */
 footer {
   text-align: center;
+  margin-top: 50px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.8);
+  font-size: 0.8rem;
+  color: #cccccc;
 }
