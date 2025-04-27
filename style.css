@@ -1,65 +1,55 @@
-/* Reset basic styles */
+/* Reset some basic styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
   font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
 }
 
-/* Video Background */
+/* Background Video */
 .video-background {
   position: fixed;
-  top: 0;
-  left: 0;
+  right: 0;
+  bottom: 0;
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
   object-fit: cover;
-  opacity: 0.7;
+  opacity: 0.6; /* soft transparent look */
 }
 
-/* Header Section */
+/* Header */
 header {
   text-align: center;
-  padding: 150px 20px 80px;
   color: white;
+  padding: 80px 20px 20px;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-  font-size: 50px;
-  text-shadow: 2px 2px 8px #000;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 header p {
-  font-size: 20px;
-  margin-top: 20px;
-  text-shadow: 1px 1px 6px #000;
+  font-size: 1.5rem;
 }
 
-/* Countdown Timer */
 #countdown {
-  font-size: 28px;
-  margin-top: 30px;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px #000;
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 /* Services Section */
 .services-section {
-  padding: 60px 20px;
-  background: rgba(248, 248, 248, 0.95);
+  padding: 50px 20px;
+  background: rgba(255, 255, 255, 0.85);
   text-align: center;
 }
 
 .services-section h2 {
-  font-size: 36px;
-  color: #003366;
-  margin-bottom: 40px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }
 
 .services-grid {
@@ -70,12 +60,12 @@ header p {
 }
 
 .service-card {
-  background: #ffffff;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  padding: 30px 20px;
-  width: 220px;
-  transition: 0.3s;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 180px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
 }
 
 .service-card:hover {
@@ -83,115 +73,107 @@ header p {
 }
 
 .service-icon {
-  width: 70px;
-  height: 70px;
-  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
 
 .service-card h3 {
-  margin-bottom: 15px;
-  font-size: 20px;
-  color: #222222;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .service-card button {
-  padding: 10px 20px;
-  background: #003366;
-  color: #fff;
+  padding: 8px 15px;
+  background: #005792;
+  color: white;
   border: none;
-  border-radius: 25px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 .service-card button:hover {
-  background: #0055a5;
+  background: #003f6b;
 }
 
 /* Profile Section */
 .profile-section {
-  padding: 80px 20px;
-  background: #eef2f5;
+  padding: 60px 20px;
   text-align: center;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .profile-section img {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 20px;
-  border: 4px solid #003366;
 }
 
 .profile-section h2 {
-  font-size: 32px;
-  color: #003366;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 5px;
 }
 
 .profile-section h3 {
-  font-size: 22px;
-  color: #555555;
-  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: gray;
+  margin-bottom: 20px;
 }
 
 .profile-section p {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
-  font-size: 18px;
-  color: #333;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 /* Appointment Section */
 .appointment-section {
-  padding: 70px 20px;
-  background: #003366;
-  color: white;
+  padding: 50px 20px;
+  background: #f0f0f0;
   text-align: center;
 }
 
 .appointment-section h2 {
-  font-size: 36px;
+  font-size: 2.5rem;
   margin-bottom: 30px;
 }
 
 form {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
 form input, form textarea {
   width: 100%;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 form button {
-  padding: 15px 30px;
-  background: #ffffff;
-  color: #003366;
+  width: 100%;
+  padding: 12px;
+  background: #0073e6;
+  color: white;
+  font-size: 1rem;
   border: none;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: bold;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 form button:hover {
-  background: #dddddd;
+  background: #005bb5;
 }
 
 /* Footer */
 footer {
-  padding: 20px;
-  background: #002244;
-  color: #ffffff;
   text-align: center;
-  font-size: 14px;
+  padding: 20px;
+  background: #222;
+  color: white;
 }
