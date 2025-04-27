@@ -86,9 +86,9 @@ body {
 
 .service {
   background: #ffffffcc;
-  padding: 20px;
+  padding: 30px;
   border-radius: 20px;
-  width: 150px;
+  width: 180px;
   transition: transform 0.3s;
 }
 
