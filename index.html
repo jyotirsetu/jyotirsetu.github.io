@@ -2,71 +2,168 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JyotirSetu | Bridge to Cosmic Light</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Lora', serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      font-family: 'Cinzel', serif;
       height: 100vh;
+      background: url('https://images.unsplash.com/photo-1606925797300-5e85743a4d6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      color: white;
       text-align: center;
-      color: #ffffff;
-      overflow: hidden;
+      overflow-x: hidden;
+      position: relative;
     }
-    #backgroundVideo {
-      position: fixed;
-      right: 0;
-      bottom: 0;
-      min-width: 100%;
-      min-height: 100%;
-      z-index: -1;
-      object-fit: cover;
-      opacity: 0.7;
+
+    .overlay {
+      background: rgba(0, 0, 30, 0.7);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
     }
+
+    .content {
+      position: relative;
+      top: 10%;
+      z-index: 1;
+      animation: fadeIn 2s ease-in-out;
+      padding: 20px;
+    }
+
     h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
+      letter-spacing: 2px;
     }
+
     h2 {
       font-size: 1.5rem;
+      font-weight: 300;
       margin-bottom: 2rem;
-      font-weight: 400;
     }
-    p {
+
+    #countdown {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
       font-size: 1rem;
-      margin-top: 2rem;
-    }
-    a {
-      color: #ffd700;
+      background: linear-gradient(90deg, #ffd700, #ffa500);
+      color: black;
+      border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
+      box-shadow: 0 0 20px #ffd700;
+      transition: all 0.3s;
     }
+
+    a.button:hover {
+      background: linear-gradient(90deg, #ffa500, #ffd700);
+      box-shadow: 0 0 30px #ffa500;
+    }
+
+    .services {
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    .services h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    .services li {
+      background: rgba(255,255,255,0.1);
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      transition: background 0.3s;
+    }
+
+    .services li:hover {
+      background: rgba(255,215,0,0.2);
+    }
+
     .footer {
       position: absolute;
-      bottom: 20px;
+      bottom: 10px;
+      width: 100%;
       font-size: 0.8rem;
-      opacity: 0.7;
+      opacity: 0.6;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
 
-  <video autoplay muted loop id="backgroundVideo">
-    <source src="201293-915375233_small.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<div class="overlay"></div>
 
+<div class="content">
   <h1>JyotirSetu</h1>
   <h2>Bridging You to Cosmic Light and Inner Wisdom ✨</h2>
-  <p><strong>Website Launching Soon!</strong></p>
-  <p>Contact us: <a href="mailto:jyotirsetu@gmail.com">jyotirsetu@gmail.com</a></p>
 
-  <div class="footer">© 2025 JyotirSetu</div>
+  <div id="countdown">Launching Soon...</div>
+
+  <a href="mailto:jyotirsetu@gmail.com" class="button">Book a Consultation</a>
+
+  <div class="services">
+    <h3>Our Services 🔮</h3>
+    <ul>
+      <li>Vedic Astrology Consultation</li>
+      <li>Kundli Matching (Marriage Compatibility)</li>
+      <li>Tarot Card Readings</li>
+      <li>Numerology and Name Correction</li>
+      <li>Birth Chart Analysis</li>
+      <li>Remedies and Gemstone Suggestions</li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer">© 2025 JyotirSetu | Powered by Cosmic Energy 🔮</div>
+
+<script>
+  const launchDate = new Date("June 30, 2025 00:00:00").getTime();
+
+  const timer = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = launchDate - now;
+
+    if (distance < 0) {
+      clearInterval(timer);
+      document.getElementById("countdown").innerHTML = "We are live!";
+    } else {
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML = 
+        `Launching In: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+  }, 1000);
+</script>
 
 </body>
 </html>
