@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JyotirSetu | Bridge to Cosmic Light</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to bottom, #0a0f2c, #1d2951);
-            color: #ffffff;
-            font-family: 'Lora', serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5rem;
-        }
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            font-weight: 400;
-        }
-        p {
-            font-size: 1rem;
-            margin-top: 2rem;
-        }
-        a {
-            color: #ffd700;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .footer {
-            position: absolute;
-            bottom: 20px;
-            font-size: 0.8rem;
-            opacity: 0.7;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JyotirSetu | Bridge to Cosmic Light</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Lora', serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: #ffffff;
+      overflow: hidden;
+    }
+    #backgroundVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      opacity: 0.7;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      font-weight: 400;
+    }
+    p {
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
+    a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+  </style>
 </head>
 <body>
-    <h1>JyotirSetu</h1>
-    <h2>Bridging You to Cosmic Light and Inner Wisdom ✨</h2>
-    <p><strong>Website Launching Soon!</strong></p>
-    <p>Contact us: <a href="mailto:jyotirsetu@gmail.com">jyotirsetu@gmail.com</a></p>
 
-    <div class="footer">© 2025 JyotirSetu</div>
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="201293-915375233_small.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <h1>JyotirSetu</h1>
+  <h2>Bridging You to Cosmic Light and Inner Wisdom ✨</h2>
+  <p><strong>Website Launching Soon!</strong></p>
+  <p>Contact us: <a href="mailto:jyotirsetu@gmail.com">jyotirsetu@gmail.com</a></p>
+
+  <div class="footer">© 2025 JyotirSetu</div>
+
 </body>
 </html>
