@@ -3,92 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JyotirSetu - Astrology Consultation by Punita Sharma</title>
+  <title>JyotirSetu - Astrology Consultation</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Background Video -->
-  <video autoplay muted loop class="video-background">
+  <video autoplay muted loop id="bg-video">
     <source src="201293-915375233_small.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    Your browser does not support HTML5 video.
   </video>
 
-  <!-- Header Section -->
-  <header>
-    <h1>JyotirSetu</h1>
-    <p>Connecting you with the Stars ✨ | Astrology by Punita Sharma</p>
-    <div id="countdown"></div>
-  </header>
+  <div class="content">
 
-  <!-- Services Section -->
-  <section class="services-section">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <img src="kundli.png" alt="Kundli Matching" class="service-icon">
-        <h3>Kundli Matching</h3>
-        <button>Explore</button>
-      </div>
-
-      <div class="service-card">
-        <img src="tarot.png" alt="Tarot Reading" class="service-icon">
-        <h3>Tarot Reading</h3>
-        <button>Explore</button>
-      </div>
-
-      <div class="service-card">
-        <img src="numerology.png" alt="Numerology" class="service-icon">
-        <h3>Numerology</h3>
-        <button>Explore</button>
-      </div>
-
-      <div class="service-card">
-        <img src="birthchart.png" alt="Birth Chart Analysis" class="service-icon">
-        <h3>Birth Chart Analysis</h3>
-        <button>Explore</button>
-      </div>
-
-      <div class="service-card">
-        <img src="gemstone.png" alt="Gemstone Consultation" class="service-icon">
-        <h3>Gemstone Consultation</h3>
-        <button>Explore</button>
-      </div>
+    <!-- Logo Center -->
+    <div class="logo">
+      <h1>JyotirSetu</h1>
     </div>
-  </section>
 
-  <!-- Profile Section -->
-  <section class="profile-section">
-    <img src="punita-profile.png" alt="Punita Sharma">
-    <h2>Ms. Punita Sharma</h2>
-    <h3>Astrologer | Palmist | Numerologist</h3>
-    <p>With 30+ years of experience, Ms. Punita Sharma has helped over 10,000 individuals find guidance and clarity in their lives. Specializing in Career Advice, Matchmaking, Kal Sarp Dosh, Pitra Dosh, and many other astrological concerns, she bridges ancient wisdom with modern understanding.</p>
-  </section>
+    <!-- Profile Section -->
+    <div class="profile">
+      <img src="punita-profile.png" alt="Punita Sharma">
+      <h2>Punita Sharma</h2>
+      <p>Astrologer | Palmist | Numerologist</p>
+    </div>
 
-  <!-- Appointment Section -->
-  <section class="appointment-section">
-    <h2>Book Your Appointment</h2>
-    <form action="https://formsubmit.co/jyotirsetu@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="tel" name="phone" placeholder="Your Phone Number" required>
-      <textarea name="message" rows="5" placeholder="Your Query / Concern" required></textarea>
+    <!-- Services Section -->
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <img src="tarot.png" alt="Tarot">
+          <p>Tarot Reading</p>
+        </div>
+        <div class="service-item">
+          <img src="kundli.png" alt="Kundli Matching">
+          <p>Kundli Matching</p>
+        </div>
+        <div class="service-item">
+          <img src="numerology.png" alt="Numerology">
+          <p>Numerology</p>
+        </div>
+        <div class="service-item">
+          <img src="birthchart.png" alt="Birth Chart">
+          <p>Birth Chart Analysis</p>
+        </div>
+        <div class="service-item">
+          <img src="gemstone.png" alt="Gemstone">
+          <p>Gemstone Consultation</p>
+        </div>
+      </div>
+    </section>
 
-      <!-- Hidden fields for auto-reply -->
-      <input type="hidden" name="_subject" value="New Appointment Request from JyotirSetu">
-      <input type="hidden" name="_autoresponse" value="Thank you for choosing JyotirSetu. Our Astro expert will get back to you shortly.">
-      <input type="hidden" name="_captcha" value="false">
+  </div>
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 JyotirSetu. All rights reserved.
-  </footer>
-
-  <!-- Scripts -->
-  <script src="script.js"></script>
 </body>
 </html>
