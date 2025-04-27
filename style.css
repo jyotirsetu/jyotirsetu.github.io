@@ -1,179 +1,146 @@
-/* Reset some basic styles */
+/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
-/* Background Video */
-.video-background {
+body, html {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #0b0c2a;
+  color: #ffffff;
+}
+
+/* Video Background */
+#bg-video {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
-  object-fit: cover;
-  opacity: 0.6; /* soft transparent look */
 }
 
-/* Header */
-header {
+/* Logo Styling */
+.logo-container {
   text-align: center;
-  color: white;
-  padding: 80px 20px 20px;
-  background: rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
 }
 
-header h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+.site-logo {
+  width: 180px;
+  height: auto;
 }
 
-header p {
-  font-size: 1.5rem;
-}
-
-#countdown {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-
-/* Services Section */
-.services-section {
-  padding: 50px 20px;
-  background: rgba(255, 255, 255, 0.85);
+/* Main Content */
+.content {
   text-align: center;
+  margin-top: 100px;
 }
 
-.services-section h2 {
-  font-size: 2.5rem;
+.content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 24px;
   margin-bottom: 30px;
 }
 
-.services-grid {
+.btn {
+  background-color: #4d79ff;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 18px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* Services */
+#services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
+  margin-top: 40px;
 }
 
-.service-card {
-  background: white;
-  border-radius: 10px;
+.service-item {
+  background: rgba(255, 255, 255, 0.1);
   padding: 20px;
-  width: 180px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
+  border-radius: 20px;
+  width: 160px;
 }
 
 .service-icon {
   width: 80px;
   height: 80px;
-  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #1c1f4a;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 32px;
   margin-bottom: 15px;
 }
 
-.service-card h3 {
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-
-.service-card button {
-  padding: 8px 15px;
-  background: #005792;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.service-card button:hover {
-  background: #003f6b;
-}
-
-/* Profile Section */
-.profile-section {
-  padding: 60px 20px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.9);
-}
-
-.profile-section img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-.profile-section h2 {
-  font-size: 2rem;
-  margin-bottom: 5px;
-}
-
-.profile-section h3 {
-  font-size: 1.2rem;
-  color: gray;
-  margin-bottom: 20px;
-}
-
-.profile-section p {
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 1rem;
+.about-content p {
+  font-size: 18px;
   line-height: 1.6;
 }
 
-/* Appointment Section */
-.appointment-section {
-  padding: 50px 20px;
-  background: #f0f0f0;
-  text-align: center;
+/* Circular Profile Image */
+.circular-image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  margin: 10px auto 20px;
+  display: block;
 }
 
-.appointment-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+/* Appointment Form */
+#appointment {
+  padding: 60px 20px;
+  text-align: center;
 }
 
 form {
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
-form input, form textarea {
+input, textarea {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  width: 100%;
-  padding: 12px;
-  background: #0073e6;
-  color: white;
-  font-size: 1rem;
+  border-radius: 8px;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  font-size: 16px;
 }
 
-form button:hover {
-  background: #005bb5;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #222;
+button[type="submit"] {
+  background-color: #4d79ff;
   color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
 }
