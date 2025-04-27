@@ -20,18 +20,25 @@ body, html {
   z-index: -1;
 }
 
+/* Content wrapper */
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
 /* Logo Styling */
 .logo {
-  text-align: center;
   margin-top: 30px;
+}
+.logo h1 {
   font-size: 40px;
   font-weight: 700;
-  color: #b0c4de; /* Silverish */
+  color: #b0c4de; /* Silver */
 }
 
 /* Profile Section */
 .profile {
-  text-align: center;
   margin-top: 20px;
 }
 .profile img {
@@ -55,7 +62,6 @@ body, html {
 /* Services Section */
 .services {
   margin: 50px auto;
-  text-align: center;
 }
 .services h2 {
   font-size: 32px;
