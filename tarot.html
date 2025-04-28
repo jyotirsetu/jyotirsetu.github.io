@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarot Reading - JyotirSetu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+<!-- Service Page Title -->
+<section class="services">
+  <h1>Tarot Reading</h1>
+</section>
+
+<!-- Service Card Section -->
+<section class="service-card">
+  <div class="card">
+    <img src="tarot-banner.jpg" alt="Tarot Reading" class="card-image">
+    <div class="card-text">
+      <h2>Unlock Your Destiny with Tarot</h2>
+      <p>Tarot is an ancient tool for gaining insights about your life path, future opportunities, relationships, and career. At JyotirSetu, Punita Sharma uses her 30+ years of expertise to deliver highly accurate and meaningful Tarot readings.</p>
+      <p>Whether you are facing confusion in your career, uncertainty in love life, or challenges in health or finances — Tarot can guide you with clarity and hope.</p>
+      <p>Book your Tarot Reading today and step into a brighter future!</p>
+    </div>
+  </div>
+</section>
+
+<!-- Appointment Form Section -->
+<section class="appointment" id="appointment">
+  <h2>Book Your Appointment</h2>
+  <form id="appointment-form" action="https://formsubmit.co/el/pululu" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Appointment from JyotirSetu Website">
+    <input type="hidden" name="_next" value="https://jyotirsetu.com/thankyou.html">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <textarea name="message" placeholder="Your Concern" required></textarea>
+
+    <button type="submit" id="submit-button">Submit</button>
+    <div id="loading" style="display:none; margin-top: 10px;">Submitting...</div>
+    <div id="success-message" style="display:none; color: green; margin-top: 10px;">✅ Thank you! Form submitted successfully.</div>
+    <div id="error-message" style="display:none; color: red; margin-top: 10px;">⚡ Oops! Something went wrong. Please try again.</div>
+  </form>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <p>© 2025 JyotirSetu. All rights reserved.</p>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+  <img src="whatsapp-icon.png" alt="Chat on WhatsApp">
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
