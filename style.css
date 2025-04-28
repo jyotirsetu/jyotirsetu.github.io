@@ -201,6 +201,7 @@ body {
   object-fit: cover;
   filter: blur(2px); /* Video ko halka blur kar diya */
   border-radius: 10px;
+  filter: blur(2px) brightness(0.7);
 }
 
 
