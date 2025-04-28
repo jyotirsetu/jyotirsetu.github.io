@@ -300,4 +300,12 @@ body {
   width: 30px;
   height: 30px;
 }
-
+.service-title-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #001f3f;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif; /* Match the overall theme */
+}
