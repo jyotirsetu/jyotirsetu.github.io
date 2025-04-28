@@ -310,3 +310,14 @@ body {
   width: 30px;
   height: 30px;
 }
+/* Tarot Page Specific Minor Fixes */
+.announcement-bar {
+  background-color: #001f3f;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 0;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
