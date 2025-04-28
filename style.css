@@ -229,7 +229,7 @@ body {
 .service-video {
   width: 100%;
   height: auto;
-  max-height: 300px;
+  max-height: 450px;
   object-fit: cover;
   filter: blur(2.5px) brightness(0.7);
   display: block;
@@ -259,9 +259,10 @@ body {
   background-color: #001f3f;
   color: white;
   text-align: center;
-  padding: 5px 0;
+  padding: 8px 0;
   font-size: 14px;
   font-weight: bold;
+  z-index: 5;
   animation: slideDown 1s ease-in-out;
 }
 /* Animation for Announcement Text */
@@ -309,14 +310,4 @@ body {
   width: 30px;
   height: 30px;
 }
-/* Tarot Page Specific Minor Fixes */
-.announcement-bar {
-  background-color: #001f3f;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  padding: 8px 0;
-  text-align: center;
-  position: relative;
-  z-index: 5;
-}
+
