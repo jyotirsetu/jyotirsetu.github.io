@@ -271,13 +271,12 @@ body {
 /* Announcement Bar */
 .announcement-bar {
   width: 100%;
-  background-color: #001f3f; /* Deep Blue Background */
+  background-color: #001f3f; /* Deep navy blue like footer */
   color: white;
   text-align: center;
   padding: 8px 0;
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.5px;
   position: fixed;
   top: 0;
   left: 0;
@@ -287,5 +286,6 @@ body {
 
 #announcement-text {
   display: inline-block;
+  opacity: 1;
   transition: opacity 0.5s ease;
 }
