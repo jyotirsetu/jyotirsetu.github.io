@@ -268,24 +268,31 @@ body {
   margin: 10px auto;
   line-height: 1.6;
 }
-/* Announcement Bar */
 .announcement-bar {
-  width: 100%;
-  background-color: #001f3f; /* Deep navy blue like footer */
-  color: white;
+  background-color: #001f3f;
+  color: #ffffff;
   text-align: center;
   padding: 8px 0;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 999;
-  overflow: hidden;
+  animation: slideDown 0.5s ease-out;
 }
 
 #announcement-text {
-  display: inline-block;
-  opacity: 1;
   transition: opacity 0.5s ease;
 }
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
