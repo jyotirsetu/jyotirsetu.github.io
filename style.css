@@ -265,6 +265,10 @@ body {
   font-weight: bold;
   animation: slideDown 1s ease-in-out;
 }
+/* Animation for Announcement Text */
+#announcement-text {
+  animation: fadeText 1s ease-in-out;
+}
 
 @keyframes slideDown {
   from { transform: translateY(-100%); opacity: 0; }
@@ -286,6 +290,20 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   z-index: 1000;
   animation: pulse 2s infinite;
+}
+/* Back Home Button */
+.back-home {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.home-button {
+  background-color: #0077b6;
+  color: white;
+  padding: 8px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 .whatsapp-float img {
