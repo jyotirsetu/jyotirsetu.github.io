@@ -268,7 +268,24 @@ body {
   margin: 10px auto;
   line-height: 1.6;
 }
-<!-- Announcement Bar -->
-<div class="announcement-bar hidden" id="announcement-text">
-  🌟 Trusted Astrology Consultations | 30+ Years Experience | Save Your Future with JyotirSetu!
-</div>
+/* Announcement Bar */
+.announcement-bar {
+  width: 100%;
+  background-color: #001f3f; /* Deep Blue Background */
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  overflow: hidden;
+}
+
+#announcement-text {
+  display: inline-block;
+  transition: opacity 0.5s ease;
+}
