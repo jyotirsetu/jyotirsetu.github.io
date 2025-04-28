@@ -15,7 +15,7 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  height: 100vh;
+  height: 70vh; /* Changed from 100vh to 70vh */
   overflow: hidden;
 }
 
@@ -165,4 +165,32 @@ body {
   text-align: center;
   padding: 15px 0;
   font-size: 14px;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  margin-top: 12px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
