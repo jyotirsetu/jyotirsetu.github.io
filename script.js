@@ -61,3 +61,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+.service-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.card {
+  background: #ffffffcc;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 1000px;
+}
+
+.card-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.card-text {
+  padding: 30px;
+  flex: 1;
+}
+
