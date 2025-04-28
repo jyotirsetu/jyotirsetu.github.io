@@ -228,14 +228,13 @@ body {
 
 .service-video {
   width: 100%;
-  height: auto;
-  max-height: 450px;
-  object-fit: cover;
-  filter: blur(2.5px) brightness(0.7);
+  max-width: 800px; /* Adjust as needed */
+  aspect-ratio: 16 / 9; /* Ensures rectangle shape */
+  object-fit: contain;
   display: block;
   margin: 0 auto;
+  background-color: black; /* Adds contrast if video doesn't fill */
 }
-
 .service-description {
   background: #f5f7fa;
   padding: 40px 20px;
