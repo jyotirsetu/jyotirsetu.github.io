@@ -36,31 +36,34 @@
 <div class="announcement-bar">
   <span id="announcement-text"></span>
 </div>
+  
   <script>
 document.addEventListener("DOMContentLoaded", function() {
   const messages = [
-    "🌟 Trusted Astrology Consultations",
-    "🔮 30+ Years Experience",
-    "✨ Save Your Future with JyotirSetu"
+    "🌟 Trusted Astrology Consultations | 30+ Years Experience | Save Your Future with JyotirSetu!",
+    "🔮 Unlock Your Life Path | Career | Marriage | Health | Certified Astrologer Punita Sharma",
+    "✨ Accurate Predictions | Career | Marriage Matching | Personalized Remedies at JyotirSetu"
   ];
   let currentMessage = 0;
-
   const announcementText = document.getElementById('announcement-text');
 
-  function showNextMessage() {
-    announcementText.style.opacity = 0; // Fade out
-    setTimeout(() => {
-      announcementText.innerText = messages[currentMessage];
-      announcementText.style.opacity = 1; // Fade in
-      currentMessage = (currentMessage + 1) % messages.length;
-    }, 500);
-  }
+  if (announcementText) {
+    announcementText.innerHTML = messages[currentMessage];
 
-  showNextMessage(); // Start immediately
-  setInterval(showNextMessage, 4000); // Change every 4 seconds
+    setInterval(() => {
+      // Fade out
+      announcementText.style.opacity = 0;
+      setTimeout(() => {
+        // Next message set karo
+        currentMessage = (currentMessage + 1) % messages.length;
+        announcementText.innerHTML = messages[currentMessage];
+        // Fade in
+        announcementText.style.opacity = 1;
+      }, 400); // 400ms delay ke baad message replace
+    }, 4000); // 4 sec ke interval me
+  }
 });
 </script>
-
   
   <!-- Hero Section with Video Background -->
   <section class="hero">
