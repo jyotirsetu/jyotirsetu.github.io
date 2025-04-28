@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         form.reset();
         setTimeout(() => {
           window.location.href = "thankyou.html"; 
-        }, 2000); // 2 seconds baad thank you page pe redirect
+        }, 2000);
       } else {
         errorMessage.style.display = 'block';
       }
@@ -60,34 +60,30 @@ document.addEventListener('DOMContentLoaded', function() {
       errorMessage.style.display = 'block';
     });
   });
+
+  // Rotating Announcement Messages (NEW Code Added Here)
+  const messages = [
+    "🌟 Trusted Astrology Consultations | 30+ Years Experience | Save Your Future with JyotirSetu!",
+    "🔮 Unlock Your Life Path | Career | Marriage | Health | Certified Astrologer Punita Sharma",
+    "✨ Accurate Predictions | Career | Marriage Matching | Personalized Remedies at JyotirSetu"
+  ];
+
+  let currentMessage = 0;
+  const announcement = document.getElementById('announcement-text');
+
+  // Show animation when page loads
+  if (announcement) {
+    announcement.classList.remove('hidden');
+    announcement.classList.add('show');
+
+    // Rotate messages every 4 seconds
+    setInterval(() => {
+      currentMessage = (currentMessage + 1) % messages.length;
+      announcement.style.opacity = 0;
+      setTimeout(() => {
+        announcement.textContent = messages[currentMessage];
+        announcement.style.opacity = 1;
+      }, 500);
+    }, 4000);
+  }
 });
-.service-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 20px;
-  background: #fff;
-}
-
-.card {
-  background: #ffffffcc;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  max-width: 1000px;
-}
-
-.card-image {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-}
-
-.card-text {
-  padding: 30px;
-  flex: 1;
-}
-
