@@ -184,7 +184,7 @@ body {
 .card-video {
   width: 100%;
   max-width: 500px;
-  height: 300px; /* Fixed slim classy height */
+  height: 500px; /* Fixed slim classy height */
   object-fit: cover;
   filter: blur(2px) brightness(0.7); /* Bonus added together */
   border-radius: 10px;
