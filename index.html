@@ -36,6 +36,31 @@
 <div class="announcement-bar">
   <span id="announcement-text"></span>
 </div>
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+  const messages = [
+    "🌟 Trusted Astrology Consultations",
+    "🔮 30+ Years Experience",
+    "✨ Save Your Future with JyotirSetu"
+  ];
+  let currentMessage = 0;
+
+  const announcementText = document.getElementById('announcement-text');
+
+  function showNextMessage() {
+    announcementText.style.opacity = 0; // Fade out
+    setTimeout(() => {
+      announcementText.innerText = messages[currentMessage];
+      announcementText.style.opacity = 1; // Fade in
+      currentMessage = (currentMessage + 1) % messages.length;
+    }, 500);
+  }
+
+  showNextMessage(); // Start immediately
+  setInterval(showNextMessage, 4000); // Change every 4 seconds
+});
+</script>
+
   
   <!-- Hero Section with Video Background -->
   <section class="hero">
