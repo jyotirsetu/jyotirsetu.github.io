@@ -216,16 +216,16 @@ body {
 }
 
 .service-video {
-  width: 100%;
-  max-width: 1000px; /* Make it larger for desktop */
-  aspect-ratio: 16 / 9; /* Proper rectangle ratio */
+  width: 90%;
+  max-width: 1000px; /* Laptop ke liye */
+  aspect-ratio: 16 / 9; /* Proper rectangle */
   height: auto;
-  object-fit: cover; /* Cover container */
+  object-fit: cover;
   display: block;
-  margin: 0 auto 20px auto; /* Center with some bottom margin */
+  margin: 20px auto;
   border-radius: 12px;
+  background-color: black; /* safety for aspect ratio */
 }
-
 
 .service-description {
   background: #f5f7fa;
