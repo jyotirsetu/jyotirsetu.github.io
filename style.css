@@ -217,13 +217,14 @@ body {
 
 .service-video {
   width: 100%;
-  max-width: 800px; /* Adjust as needed */
-  aspect-ratio: 16 / 9; /* Ensures rectangle shape */
-  object-fit: contain;
+  max-width: 800px;
+  aspect-ratio: 16 / 9; /* Rectangle ratio */
+  object-fit: cover; /* <-- yaha contain nahi, cover chahiye */
   display: block;
   margin: 0 auto;
-  background-color: black; /* Adds contrast if video doesn't fill */
+  border-radius: 10px;
 }
+
 .service-description {
   background: #f5f7fa;
   padding: 40px 20px;
