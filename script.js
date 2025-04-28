@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         announcementText.innerHTML = messages[currentMessage];
         // Fade in
         announcementText.style.opacity = 1;
-      }, 500); // 0.5 sec ke baad message change karo
+      }, 3000); // 0.5 sec ke baad message change karo
 
     }, 4000); // 4 seconds ke baad message change hota rahega
   }
