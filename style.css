@@ -15,9 +15,8 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  height: 70vh; /* Pehle 100vh tha, 70vh perfect hai classy look ke liye */
+  height: 75vh; /* thoda height badha diya 75% of viewport */
   overflow: hidden;
-  margin-bottom: 0; /* white gap avoid */
 }
 
 .background-video-container {
@@ -42,7 +41,7 @@ body {
   position: relative;
   z-index: 2;
   text-align: center;
-  padding-top: 100px;
+  padding: 80px 20px 40px 20px; /* Top padding 80px, Bottom padding 40px */
   color: white;
 }
 
@@ -76,11 +75,11 @@ body {
 
 /* Services Section */
 .services {
-  padding: 70px 20px;
+  padding: 70px 30px;
   text-align: center;
   background: #f9f9f9;
-  margin-top: -60px;
-}
+  margin-top: 0; /* margin-top: -40px hata do */
+
 
 .services h2 {
   font-size: 2.5rem;
