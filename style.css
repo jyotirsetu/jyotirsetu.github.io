@@ -15,15 +15,16 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  height: 70vh; /* Changed from 100vh to 70vh */
+  height: 60vh; /
   overflow: hidden;
 }
 
 .background-video {
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
   position: absolute;
+  filter: blur(2px) brightness(0.7);
   top: 0;
   left: 0;
   z-index: -1;
@@ -181,12 +182,12 @@ body {
   font-size: 30px;
   z-index: 100;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  animation: pulse 2s infinite;
+  animation: pulse 1.5s infinite;
 }
 
 .whatsapp-float img {
-  width: 35px;
-  margin-top: 12px;
+  width: 45px;
+  margin-top: 18px;
 }
 
 @keyframes pulse {
