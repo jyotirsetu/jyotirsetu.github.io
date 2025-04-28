@@ -15,7 +15,8 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  height: 100vh;
+  height: 70vh;
+  width: 100%
   overflow: hidden;
   }
 
