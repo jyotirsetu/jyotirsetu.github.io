@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Rotating Announcement Messages (NEW Code Added Here)
+  // Rotating Announcement Messages
+document.addEventListener('DOMContentLoaded', function () {
   const messages = [
     "🌟 Trusted Astrology Consultations | 30+ Years Experience | Save Your Future with JyotirSetu!",
     "🔮 Unlock Your Life Path | Career | Marriage | Health | Certified Astrologer Punita Sharma",
@@ -69,21 +70,18 @@ document.addEventListener('DOMContentLoaded', function() {
   ];
 
   let currentMessage = 0;
-  const announcement = document.getElementById('announcement-text');
+  const announcementText = document.getElementById('announcement-text');
 
-  // Show animation when page loads
-  if (announcement) {
-    announcement.classList.remove('hidden');
-    announcement.classList.add('show');
-
-    // Rotate messages every 4 seconds
+  if (announcementText) {
     setInterval(() => {
-      currentMessage = (currentMessage + 1) % messages.length;
-      announcement.style.opacity = 0;
+      announcementText.style.opacity = 0;
+
       setTimeout(() => {
-        announcement.textContent = messages[currentMessage];
-        announcement.style.opacity = 1;
+        currentMessage = (currentMessage + 1) % messages.length;
+        announcementText.innerHTML = messages[currentMessage];
+        announcementText.style.opacity = 1;
       }, 500);
-    }, 4000);
+
+    }, 4000); // Change message every 4 seconds
   }
 });
