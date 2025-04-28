@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JyotirSetu - Astrology Consultation</title>
   <link rel="stylesheet" href="style.css">
+  
   <!-- Primary Meta Tags -->
 <title>JyotirSetu - Astrology Consultation by Punita Sharma | 30+ Years Experience</title>
 <meta name="title" content="JyotirSetu - Astrology Consultation by Punita Sharma | 30+ Years Experience">
@@ -52,30 +53,49 @@
   <section class="services">
     <h2>Our Services</h2>
     <div class="service-cards">
+
       <div class="service">
-        <img src="tarot.png" alt="Tarot Reading">
-        <p>Tarot Reading</p>
+        <a href="tarot.html">
+          <img src="tarot.png" alt="Tarot Reading">
+          <p>Tarot Reading</p>
+        </a>
       </div>
+
       <div class="service">
-        <img src="kundli.png" alt="Kundli Matching">
-        <p>Kundli Matching</p>
+        <a href="kundli.html">
+          <img src="kundli.png" alt="Kundli Matching">
+          <p>Kundli Matching</p>
+        </a>
       </div>
+
       <div class="service">
-        <img src="numerology.png" alt="Numerology">
-        <p>Numerology</p>
+        <a href="numerology.html">
+          <img src="numerology.png" alt="Numerology">
+          <p>Numerology</p>
+        </a>
       </div>
+
       <div class="service">
-        <img src="birthchart.png" alt="Birth Chart Analysis">
-        <p>Birth Chart Analysis</p>
+        <a href="birthchart.html">
+          <img src="birthchart.png" alt="Birth Chart Analysis">
+          <p>Birth Chart Analysis</p>
+        </a>
       </div>
+
       <div class="service">
-        <img src="gemstone.png" alt="Gemstone Consultation">
-        <p>Gemstone Consultation</p>
+        <a href="gemstone.html">
+          <img src="gemstone.png" alt="Gemstone Consultation">
+          <p>Gemstone Consultation</p>
+        </a>
       </div>
-        <div class="service">
-        <img src="palmist.png" alt="Palmistry">
-        <p>Palmistry</p>
+
+      <div class="service">
+        <a href="palmistry.html">
+          <img src="palmist.png" alt="Palmistry">
+          <p>Palmistry</p>
+        </a>
       </div>
+
     </div>
   </section>
 
@@ -87,30 +107,36 @@
     <p>Specialized in Career, Matchmaking, Kal Sarp Dosh, Pitra Dosh, Health, Financial Problems and more.</p>
   </section>
 
-<section class="appointment" id="appointment">
-  <h2>Book Your Appointment</h2>
-  
-  <form id="appointment-form" action="https://formsubmit.co/el/pululu" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="New Appointment from JyotirSetu Website">
-    <input type="hidden" name="_next" value="https://jyotirsetu.com/thankyou.html">
-    
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="text" name="phone" placeholder="Phone Number" required>
-    <textarea name="message" placeholder="Your Concern" required></textarea>
-    
-    <button type="submit" id="submit-button">Submit</button>
-    <div id="loading" style="display:none; margin-top: 10px;">Submitting...</div>
-    <div id="success-message" style="display:none; color: green; margin-top: 10px;">✅ Thank you! Form submitted successfully.</div>
-    <div id="error-message" style="display:none; color: red; margin-top: 10px;">⚡ Oops! Something went wrong. Please try again.</div>
-  </form>
-</section>
-  
-<!-- Footer Section -->
-<footer class="footer">
-  <p>© 2025 JyotirSetu. All rights reserved.</p>
-</footer> 
+  <!-- Appointment Section -->
+  <section class="appointment" id="appointment">
+    <h2>Book Your Appointment</h2>
+
+    <form id="appointment-form" action="https://formsubmit.co/el/pululu" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Appointment from JyotirSetu Website">
+      <input type="hidden" name="_next" value="https://jyotirsetu.com/thankyou.html">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" placeholder="Your Concern" required></textarea>
+
+      <button type="submit" id="submit-button">Submit</button>
+      <div id="loading" style="display:none; margin-top: 10px;">Submitting...</div>
+      <div id="success-message" style="display:none; color: green; margin-top: 10px;">✅ Thank you! Form submitted successfully.</div>
+      <div id="error-message" style="display:none; color: red; margin-top: 10px;">⚡ Oops! Something went wrong. Please try again.</div>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>© 2025 JyotirSetu. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <img src="whatsapp-icon.png" alt="Chat on WhatsApp">
+  </a>
 
   <!-- Script for Form Submission -->
   <script>
@@ -121,7 +147,7 @@
   const submitButton = document.getElementById('submit-button');
 
   form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Form ko refresh hone se rokta hai
+    event.preventDefault();
     loading.style.display = 'block';
     submitButton.disabled = true;
 
@@ -140,7 +166,7 @@
         form.reset();
         setTimeout(() => {
           window.location.href = "https://jyotirsetu.com/thankyou.html";
-        }, 2000); // 2 second baad redirect karega
+        }, 2000);
       } else {
         errorMessage.style.display = 'block';
       }
@@ -151,6 +177,7 @@
       submitButton.disabled = false;
     });
   });
-</script>
+  </script>
+
 </body>
 </html>
