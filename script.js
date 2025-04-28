@@ -61,32 +61,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
- document.addEventListener('DOMContentLoaded', function () {
+ document.addEventListener("DOMContentLoaded", function() {
   const messages = [
-    "🌟 Trusted Astrology Consultations | 30+ Years Experience | Save Your Future with JyotirSetu!",
-    "🔮 Unlock Your Life Path | Career | Marriage | Health | Certified Astrologer Punita Sharma",
-    "✨ Accurate Predictions | Career | Marriage Matching | Personalized Remedies at JyotirSetu"
+    "🌟 Accurate Predictions | Career | Marriage | Health | Certified Astrologer Punita Sharma",
+    "🔮 30+ Years Expertise | Trusted by 10,000+ Clients | JyotirSetu",
+    "✨ Unlock Your Destiny | Personalized Remedies | Transform Your Future Today!"
   ];
-
   let currentMessage = 0;
   const announcementText = document.getElementById('announcement-text');
 
-  if (announcementText) {
-    // Pehle message dikha do
-    announcementText.innerHTML = messages[currentMessage];
-
-    setInterval(() => {
-      // Fade out
-      announcementText.style.opacity = 0;
-
-      setTimeout(() => {
-        // Next message set karo
-        currentMessage = (currentMessage + 1) % messages.length;
-        announcementText.innerHTML = messages[currentMessage];
-        // Fade in
-        announcementText.style.opacity = 1;
-      }, 3000); // 0.5 sec ke baad message change karo
-
-    }, 4000); // 4 seconds ke baad message change hota rahega
+  function showNextMessage() {
+    announcementText.style.opacity = 0;
+    setTimeout(() => {
+      announcementText.textContent = messages[currentMessage];
+      announcementText.style.opacity = 1;
+      currentMessage = (currentMessage + 1) % messages.length;
+    }, 400);
   }
+
+  showNextMessage();
+  setInterval(showNextMessage, 4000);
 });
