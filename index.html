@@ -33,37 +33,42 @@
 </head>
 <body>
   
-<div class="announcement-bar">
-  <span id="announcement-text"></span>
-</div>
-  
-  <script>
-document.addEventListener("DOMContentLoaded", function() {
-  const messages = [
-    "🌟 Trusted Astrology Consultations | 30+ Years Experience | Save Your Future with JyotirSetu!",
-    "🔮 Unlock Your Life Path | Career | Marriage | Health | Certified Astrologer Punita Sharma",
-    "✨ Accurate Predictions | Career | Marriage Matching | Personalized Remedies at JyotirSetu"
-  ];
-  let currentMessage = 0;
-  const announcementText = document.getElementById('announcement-text');
+ <div class="announcement-bar">
+        <span id="announcement-text"></span>
+    </div>
 
-  if (announcementText) {
-    announcementText.innerHTML = messages[currentMessage];
+    <div class="video-container">
+        <video class="service-video" controls>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-    setInterval(() => {
-      // Fade out
-      announcementText.style.opacity = 0;
-      setTimeout(() => {
-        // Next message set karo
-        currentMessage = (currentMessage + 1) % messages.length;
-        announcementText.innerHTML = messages[currentMessage];
-        // Fade in
-        announcementText.style.opacity = 1;
-      }, 400); // 400ms delay ke baad message replace
-    }, 4000); // 4 sec ke interval me
-  }
-});
-</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const messages = [
+                "🌟 Trusted Astrology Consultations | 30+ Years Experience | Save Your Future with JyotirSetu!",
+                "🔮 Unlock Your Life Path | Career | Marriage | Health | Certified Astrologer Punita Sharma",
+                "✨ Accurate Predictions | Career | Marriage Matching | Personalized Remedies at JyotirSetu"
+            ];
+            let currentMessage = 0;
+            const announcementText = document.getElementById('announcement-text');
+
+            if (announcementText) {
+                announcementText.innerHTML = messages[currentMessage];
+
+                setInterval(() => {
+                    // Smooth fade transition
+                    announcementText.style.opacity = "0";
+                    setTimeout(() => {
+                        currentMessage = (currentMessage + 1) % messages.length;
+                        announcementText.innerHTML = messages[currentMessage];
+                        announcementText.style.opacity = "1";
+                    }, 400);
+                }, 4000);
+            }
+        });
+    </script>
   
   <!-- Hero Section with Video Background -->
   <section class="hero">
