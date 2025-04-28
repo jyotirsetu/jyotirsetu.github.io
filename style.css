@@ -244,7 +244,7 @@ body {
 
 .service-video {
   width: 200%;
-  height: 250px;
+  height: 350px;
   object-fit: cover;
   filter: blur(2px) brightness(0.7);
   display: block;
