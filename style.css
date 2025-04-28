@@ -228,7 +228,7 @@ body {
 
 .service-video {
   width: 100%;
-  max-width: 900px; /* Adjust as needed */
+  max-width: 700px; /* Adjust as needed */
   aspect-ratio: 16 / 9; /* Ensures rectangle shape */
   object-fit: contain;
   display: block;
