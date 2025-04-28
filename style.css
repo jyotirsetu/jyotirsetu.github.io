@@ -76,10 +76,10 @@ body {
 
 /* Services Section */
 .services {
-  padding: 70px 30px;
+  padding: 70px 20px;
   text-align: center;
   background: #f9f9f9;
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 .services h2 {
