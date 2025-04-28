@@ -15,8 +15,9 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  height: 65vh; /
+  height: 100vh;
   overflow: hidden;
+  padding-top: 40px; /* <-- Add this line for announcement space */
 }
 
 .background-video {
