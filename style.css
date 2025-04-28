@@ -217,13 +217,15 @@ body {
 
 .service-video {
   width: 100%;
-  max-width: 800px;
-  aspect-ratio: 16 / 9; /* Rectangle ratio */
-  object-fit: cover; /* <-- yaha contain nahi, cover chahiye */
+  max-width: 1000px; /* Make it larger for desktop */
+  aspect-ratio: 16 / 9; /* Proper rectangle ratio */
+  height: auto;
+  object-fit: cover; /* Cover container */
   display: block;
-  margin: 0 auto;
-  border-radius: 10px;
+  margin: 0 auto 20px auto; /* Center with some bottom margin */
+  border-radius: 12px;
 }
+
 
 .service-description {
   background: #f5f7fa;
