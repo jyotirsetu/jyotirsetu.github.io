@@ -245,11 +245,11 @@ body {
 }
 
 .service-video {
-  width: 100%;
+  width: 200%;
   height: auto;
-  aspect-ratio: 16 / 9
+  aspect-ratio: 16/9
   object-fit: none;
-  filter: blur(2px) brightness(0.7);
+  filter: blur(2.5px) brightness(0.7);
   display: block;
   margin: 0 auto;
 }
