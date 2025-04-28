@@ -272,25 +272,34 @@ body {
 }
 
 /* Announcement Bar Styling */
+/* Announcement Bar */
 .announcement-bar {
-  width: 100%;
-  background-color: #001f3f; /* Deep navy blue */
-  color: #ffffff;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 14px;
-  font-weight: 600;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  overflow: hidden;
-  box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+    background-color: #ff9800;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 #announcement-text {
-  display: inline-block;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-  font-size: 14px;
+    display: inline-block;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Video Container */
+.video-container {
+    margin-top: 60px; /* Adjusting for announcement bar */
+    text-align: center;
+}
+
+/* Video Styling */
+.service-video {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
 }
