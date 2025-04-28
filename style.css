@@ -216,7 +216,7 @@ body {
 }
 
 .service-video {
-  width: 90%;
+  width: 50%;
   max-width: 1000px; /* Laptop ke liye */
   aspect-ratio: 16 / 9; /* Proper rectangle */
   height: auto;
