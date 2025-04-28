@@ -245,10 +245,10 @@ body {
 }
 
 .service-video {
-  width: 200%;
+  width: 100%;
   height: auto;
-  aspect-ratio: 16/9
-  object-fit: none;
+  max-height: 300px;
+  object-fit: cover;
   filter: blur(2.5px) brightness(0.7);
   display: block;
   margin: 0 auto;
@@ -271,35 +271,19 @@ body {
   line-height: 1.6;
 }
 
-/* Announcement Bar Styling */
 /* Announcement Bar */
 .announcement-bar {
-    background-color: #ff9800;
+    background-color: #001f3f; /* Dark Navy Blue */
     color: white;
     text-align: center;
-    padding: 15px;
-    font-size: 18px;
-    position: fixed;
-    top: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
     width: 100%;
-    z-index: 10;
+    z-index: 999;
 }
 
 #announcement-text {
     display: inline-block;
     transition: opacity 0.4s ease-in-out;
-}
-
-/* Video Container */
-.video-container {
-    margin-top: 60px; /* Adjusting for announcement bar */
-    text-align: center;
-}
-
-/* Video Styling */
-.service-video {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-    object-fit: contain;
 }
