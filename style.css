@@ -268,31 +268,27 @@ body {
   margin: 10px auto;
   line-height: 1.6;
 }
+/* Announcement Bar Correct Styling */
 .announcement-bar {
-  background-color: #001f3f;
-  color: #ffffff;
-  text-align: center;
-  padding: 8px 0;
-  font-size: 14px;
-  font-weight: bold;
-  position: fixed;
   width: 100%;
+  background-color: #001f3f; /* Deep Navy Blue */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  animation: slideDown 0.5s ease-out;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 #announcement-text {
-  transition: opacity 0.5s ease;
+  display: inline-block;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 500;
 }
-
-@keyframes slideDown {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
