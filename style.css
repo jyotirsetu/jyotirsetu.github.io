@@ -194,3 +194,13 @@ body {
   50% { transform: scale(1.1); }
   100% { transform: scale(1); }
 }
+.card-video {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+  filter: blur(2px); /* Video ko halka blur kar diya */
+  border-radius: 10px;
+}
+
+
