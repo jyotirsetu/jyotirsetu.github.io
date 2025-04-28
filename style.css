@@ -179,17 +179,6 @@ body {
   100% { transform: scale(1); }
 }
 
-/* Tarot Service Page Video */
-.card-video {
-  width: 100%;
-  max-width: 500px;
-  height: 500px; /* Fixed slim classy height */
-  object-fit: cover;
-  filter: blur(2px) brightness(0.7); /* Bonus added together */
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
 /* Generic Service Page Card Design (for Kundli, Numerology etc.) */
 .service-card {
   display: flex;
