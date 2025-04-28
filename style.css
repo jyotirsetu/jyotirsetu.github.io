@@ -217,14 +217,13 @@ body {
 
 .service-video {
   width: 50%;
-  max-width: 1000px; /* Laptop ke liye */
+  max-width: 700px; /* Laptop ke liye */
   aspect-ratio: 16 / 9; /* Proper rectangle */
   height: auto;
   object-fit: cover;
   display: block;
   margin: 20px auto;
-  border-radius: 12px;
-  background-color: black; /* safety for aspect ratio */
+  border-radius: 22px;
 }
 
 .service-description {
