@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>#announcement-text {opacity: 1;}</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numerology - JyotirSetu</title>
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+<div class="announcement-bar">
+  <span id="announcement-text"></span>
+</div>
+
+<section class="service-title-section">
+  <h1>Numerology</h1>
+</section>
+
+<section class="service-video-section">
+ <video autoplay muted loop playsinline class="service-video">
+    <source src="numerology.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<section class="service-description">
+  <h2>Decode Your Destiny with Numbers</h2>
+  <p>Numbers speak louder than words. With 30+ years of experience, Punita Sharma helps you understand the power of your date of birth and name to unlock health, wealth, and relationship guidance through Numerology.</p>
+  <p>Know your lucky number, destiny path, and life purpose today with accurate Numerology consultation.</p>
+</section>
+
+<div class="book-appointment" style="text-align: center; margin: 20px 0;">
+  <a href="#appointment" class="appointment-button">Book Appointment</a>
+</div>
+
+<div class="back-home">
+  <a href="index.html" class="home-button">Back to Home</a>
+</div>
+
+<section class="appointment" id="appointment">
+  <h2>Book Your Appointment</h2>
+  <form id="appointment-form" action="https://formsubmit.co/el/pululu" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Appointment from JyotirSetu Website">
+    <input type="hidden" name="_next" value="https://jyotirsetu.com/thankyou.html">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+    <textarea name="message" placeholder="Your Concern" required></textarea>
+    <button type="submit" id="submit-button">Submit</button>
+    <div id="loading" style="display:none; margin-top: 10px;">Submitting...</div>
+    <div id="success-message" style="display:none; color: green; margin-top: 10px;">✅ Thank you! Form submitted successfully.</div>
+    <div id="error-message" style="display:none; color: red; margin-top: 10px;">⚡ Oops! Something went wrong. Please try again.</div>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>© 2025 JyotirSetu. All rights reserved.</p>
+</footer>
+
+<a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+  <img src="whatsapp-icon.png" alt="Chat on WhatsApp">
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
