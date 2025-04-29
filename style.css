@@ -32,7 +32,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(0.5) blur(0px); /* Blur + dark effect for text readability */
+  filter: brightness(0.5); /* Blur + dark effect for text readability */
 }
 
 .hero-content {
@@ -314,3 +314,81 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 60px 20px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .appointment-button,
+  .home-button {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service {
+    width: 90%;
+  }
+
+  .profile h2,
+  .appointment h2,
+  .service-description h2 {
+    font-size: 1.8rem;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  #appointment-form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  #appointment-form input,
+  #appointment-form textarea,
+  #appointment-form button {
+    width: 100%;
+  }
+
+  .service-video {
+    width: 95%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-image {
+    max-width: 100%;
+  }
+
+  .card-text {
+    padding: 20px;
+  }
+}
+
