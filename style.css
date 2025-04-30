@@ -567,6 +567,43 @@ body {
     color: #5f0f40;
   }
 }
+/* Unified input styling for forms */
+#form input,
+#form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  box-sizing: border-box;
+}
+
+#form textarea {
+  resize: vertical;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+#form button {
+  padding: 12px 25px;
+  background: #7b2cbf;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+#form button:hover {
+  background: #5a189a;
+}
 
 
 
