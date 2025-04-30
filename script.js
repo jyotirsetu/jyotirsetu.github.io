@@ -22,45 +22,48 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Appointment Form Submission
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('appointment-form');
-  const loading = document.getElementById('loading');
-  const successMessage = document.getElementById('success-message');
-  const errorMessage = document.getElementById('error-message');
-  const submitButton = document.getElementById('submit-button');
+const form = document.getElementById("form");
+const result = document.getElementById("result");
 
-  if (form) {
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      loading.style.display = 'block';
-      submitButton.disabled = true;
-      successMessage.style.display = 'none';
-      errorMessage.style.display = 'none';
+form.addEventListener("submit", function (e) {
+  const formData = new FormData(form);
+  e.preventDefault();
+  var object = {};
+  formData.forEach((value, key) => {
+    object[key] = value;
+  });
+  var json = JSON.stringify(object);
+  result.innerHTML = "Please wait...";
 
-      fetch(form.action, {
-        method: form.method,
-        body: new FormData(form),
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        loading.style.display = 'none';
-        submitButton.disabled = false;
-
-        if (response.ok) {
-          successMessage.style.display = 'block';
-          form.reset();
-          setTimeout(() => {
-            window.location.href = "thankyou.html";
-          }, 2000);
-        } else {
-          errorMessage.style.display = 'block';
-        }
-      }).catch(error => {
-        loading.style.display = 'none';
-        submitButton.disabled = false;
-        errorMessage.style.display = 'block';
-      });
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: json
+  })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-green-500");
+      } else {
+        console.log(response);
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-red-500");
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      result.innerHTML = "Something went wrong!";
+    })
+    .then(function () {
+      form.reset();
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 5000);
     });
-  }
 });
