@@ -1,9 +1,12 @@
 // Announcement Rotator
 document.addEventListener("DOMContentLoaded", function () {
   const messages = [
-    "🌟 Trusted Astrology Consultations",
-    "🔮 30+ Years Experience",
-    "✨ Save Your Future with JyotirSetu"
+    "🌟 Trusted Astrology Consultations – Unlock your destiny with expert guidance!",
+    "🔮 30+ Years of Experience – Wisdom that lights your path to success!",
+    "✨ Save Your Future with JyotirSetu – Navigate life’s uncertainties with confidence!"
+    "🕉️ Personalized Predictions & Remedies – Discover tailored solutions for your journey!"
+    "🌕 Vedic Astrology at Its Best – Time-tested insights for a better tomorrow!"
+    "🔥 Achieve Clarity & Success – Find answers with Punit Sharma’s expert astrology!"
   ];
   let index = 0;
   const textElement = document.getElementById('announcement-text');
@@ -66,4 +69,13 @@ form.addEventListener("submit", function (e) {
         result.style.display = "none";
       }, 5000);
     });
+});
+// Toggle mobile nav
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
 });
