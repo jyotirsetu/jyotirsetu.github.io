@@ -157,20 +157,32 @@ body {
   gap: 15px;
 }
 
+/* ✍️ Appointment Form Styling Fix */
 #appointment-form input,
 #appointment-form textarea {
-  padding: 10px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  resize: vertical;
 }
 
 #appointment-form button {
-  padding: 12px;
+  padding: 12px 25px;
   background: #7b2cbf;
-  color: white;
+  color: #fff;
+  font-size: 16px;
   border: none;
-  border-radius: 30px;
+  border-radius: 25px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#appointment-form button:hover {
+  background: #5f0f40;
 }
 
 /* Footer */
@@ -469,6 +481,90 @@ body {
 
   #menu-toggle:checked + .hamburger + .nav-links {
     display: flex;
+  }
+}
+/* ✨ Announcement Bar */
+.announcement-bar {
+  width: 100%;
+  background: #3c096c;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 1000;
+  position: relative;
+}
+
+/* 🌐 Navigation Header */
+.main-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5f0f40;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #3c096c;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #7b2cbf;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* 📱 Mobile Menu */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1001;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: #5f0f40;
   }
 }
 
