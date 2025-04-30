@@ -292,5 +292,59 @@ body {
   font-weight: bold;
   display: inline-block;
 }
+/* Center & style service title */
+.service-title-section h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #5e548e;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #7b2cbf, #9d4edd);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+/* Service description padding and centering */
+.service-description {
+  background: #fdf6f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.service-description h2 {
+  font-size: 2rem;
+  color: #5f0f40;
+  margin-bottom: 20px;
+}
+
+.service-description p {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Video container spacing for better breathing room */
+.service-video-section {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.service-video {
+  width: 90%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 
 
