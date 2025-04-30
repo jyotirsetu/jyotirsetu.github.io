@@ -1,0 +1,228 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fdf6f0;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.background-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6) blur(1px);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 100px 20px 40px 20px;
+  color: white;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.appointment-button {
+  padding: 10px 25px;
+  background: #7b2cbf;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* Services Section */
+.services {
+  padding: 70px 30px;
+  text-align: center;
+  background: #fffaf5;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #5e548e;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service {
+  background: #ffffffcc;
+  padding: 30px;
+  border-radius: 20px;
+  width: 180px;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #3c096c;
+  font-weight: 600;
+}
+
+.service:hover {
+  transform: translateY(-10px);
+}
+
+/* Profile Section */
+.profile {
+  padding: 50px 20px;
+  text-align: center;
+  background: #eef2f7;
+}
+
+.profile h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px 0;
+}
+
+/* Appointment Section */
+.appointment {
+  padding: 50px 20px;
+  background: #f1eaff;
+  text-align: center;
+}
+
+.appointment h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #5f0f40;
+}
+
+#appointment-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#appointment-form input,
+#appointment-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#appointment-form button {
+  padding: 12px;
+  background: #7b2cbf;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #3c096c;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+  width: 100%;
+  background-color: #3c096c;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: bold;
+  animation: slideDown 1s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
