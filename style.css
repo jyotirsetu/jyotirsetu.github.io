@@ -226,3 +226,22 @@ body {
   from { transform: translateY(-100%); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+.service-video-section {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background: #fffaf5;
+}
+
+.service-video {
+  width: 90%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  filter: brightness(0.85) saturate(1.1);
+}
+
