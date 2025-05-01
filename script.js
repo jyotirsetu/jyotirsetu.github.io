@@ -82,3 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleMenu() {
   document.getElementById("navLinks").classList.toggle("active");
 }
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
