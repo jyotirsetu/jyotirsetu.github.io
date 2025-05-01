@@ -1,3 +1,77 @@
+/* === FIXED: Announcement Bar Position === */
+.announcement-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #3c096c;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 1001;
+  overflow: hidden;
+}
+#announcement-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 15s linear infinite;
+}
+@keyframes scroll-left {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+/* === FIXED: Navbar directly below announcement === */
+.navbar {
+  position: fixed;
+  top: 40px; /* Same as announcement bar height */
+  width: 100%;
+  background: #3c096c;
+  z-index: 1000;
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* === FIXED: Booking Form Layout === */
+#appointment-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#appointment-form input,
+#appointment-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdfd;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+#appointment-form button {
+  background: #7b2cbf;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#appointment-form button:hover {
+  background: #5f0f40;
+}
 /* Basic Reset */
 * {
   margin: 0;
