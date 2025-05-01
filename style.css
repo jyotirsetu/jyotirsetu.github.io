@@ -179,8 +179,8 @@ body {
   min-width: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.6) blur(1px);
-  position: absolute;
+  filter: brightness(0.8) blur(0.5px);
+  position: sticky;
   top: 0; left: 0;
 }
 .hero-content {
