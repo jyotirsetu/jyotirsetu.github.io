@@ -11,25 +11,24 @@
 <!-- Announcement Bar -->
 <div class="announcement-bar">
   <span id="announcement-text"></span>
+    <button class="close-announcement" onclick="this.parentElement.style.display='none'">×</button>
 </div>
 </head>
   
-<!-- 🌐 Navigation Menu -->
-<header class="main-header">
-  <div class="container">
-    <div class="logo"><a href="index.html">JyotirSetu</a></div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="#appointment">Appointment</a></li>
-      <li><a href="cont.html">Contact</a></li>
-    </ul>
+<!-- Navigation Bar -->
+<header class="navbar">
+  <div class="navbar-container">
+    <img src="assets/logo.png" alt="JyotirSetu Logo" class="site-logo" />
+    <nav class="nav-links">
+      <a href="#services">Services</a> <!-- Links to services section on the homepage -->
+      <a href="about.html">About</a>   <!-- Links to about.html page -->
+      <a href="contact.html">Contact</a> <!-- Links to contact.html page -->
+      <a href="#booking" class="cta-button">Book Now</a> <!-- Scrolls to booking form -->
+    </nav>
   </div>
 </header>
-  
-<!-- Hero Section with Video Background -->
+
+  <!-- Hero Section with Video Background -->
 <section class="hero">
   <div class="background-video-container">
     <video autoplay muted loop playsinline class="background-video">
