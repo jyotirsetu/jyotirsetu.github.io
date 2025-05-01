@@ -410,6 +410,7 @@ body {
 .navbar {
   position: fixed;
   top: 0;
+  padding: 10px;
   width: 100%;
   background: #3c096c;
   color: white;
