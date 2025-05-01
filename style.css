@@ -216,30 +216,30 @@ body {
   height: 30px;
 }
 
-/* Announcement Bar */
-  .announcement-bar {
-  position: fixed;            /* fix at top of viewport */
-  top: 0; left: 0; 
-  width: 100%;                /* span full width */
-  background: #3c096c;        /* dark theme color (matches new nav) */
+/* Announcement Bar (fixed at top) */
+.announcement-bar {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: #3c096c;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  z-index: 1001;              /* above nav (which is 999) */
+  text-align: center;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 14px;
+  z-index: 1000;
   overflow: hidden;
 }
-  
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
+/* Scrolling text */
+#announcement-text {
+  display: inline-block;
+  white-space: nowrap;
+  /* Animate left-to-right scroll */
+  animation: scroll-left 15s linear infinite;
 }
-
-@keyframes slideDown {
-  from { transform: translateY(-100%); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+@keyframes scroll-left {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(-100%); }
 }
 
 .service-video-section {
@@ -411,13 +411,18 @@ body {
 }
 
 .navbar-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 12px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
 }
+.site-logo {
+  width: 120px;
+  height: auto;
+}
+
 .hero {
   padding-top: 120px; /* 40px (announcement) + ~80px (navbar) */
 }
@@ -491,8 +496,10 @@ body {
     display: flex;
   }
 }
-/* ✨ Announcement Bar */
+/* Announcement Bar (fixed, scrolling text) */
 .announcement-bar {
+  position: fixed;
+  top: 0; left: 0;
   width: 100%;
   background: #3c096c;
   color: #fff;
@@ -501,7 +508,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   z-index: 1000;
-  position: relative;
+  overflow: hidden;
 }
 #announcement-text {
   display: inline-block;
@@ -512,7 +519,6 @@ body {
   from { transform: translateX(100%); }
   to   { transform: translateX(-100%); }
 }
-
 
 /* 🌐 Navigation Header */
 .main-header {
