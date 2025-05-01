@@ -230,14 +230,6 @@ body {
   z-index: 1000;
   overflow: hidden;
 }
-/* Animation for Announcement Text */
-#announcement-text {
-  animation: fadeText 1s ease-in-out;
-}
-@keyframes slideDown {
-  from { transform: translateY(-100%); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
 
 .service-video-section {
   width: 100%;
@@ -399,7 +391,7 @@ body {
 /* Navbar Styling */
 .navbar {
   position: fixed;
-  top: 20px; /* Move below the announcement bar */
+  top: 40px; /* Move below the announcement bar */
   width: 100%;
   background: #3c096c;
   z-index: 1000;
