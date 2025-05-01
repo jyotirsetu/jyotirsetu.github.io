@@ -402,7 +402,7 @@ body {
 /* Navbar Styling */
 .navbar {
   position: fixed;
-  top: 40px; /* Move below the announcement bar */
+  top: 20px; /* Move below the announcement bar */
   width: 100%;
   background: #3c096c;
   z-index: 1000;
