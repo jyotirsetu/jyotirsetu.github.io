@@ -257,19 +257,6 @@ body {
   margin: 20px 0;
 }
 
-/* Appointment Section */
-.appointment {
-  padding: 50px 20px;
-  background: #f1eaff;
-  text-align: center;
-}
-
-.appointment h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #5f0f40;
-}
-
 /* Service Video Section */
 .service-video-section {
   width: 100%;
