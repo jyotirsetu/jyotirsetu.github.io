@@ -10,10 +10,29 @@
 </head>
 <body>
 
+<!-- Announcement Bar -->
 <div class="announcement-bar">
-  <span id="announcement-text"></span>
+  <span id="announcement-text">
+    🔔 Welcome to JyotirSetu – Your gateway to trusted astrological insights. Book your appointment today!
+  </span>
 </div>
 
+<!-- Navigation Bar -->
+<header class="navbar">
+  <div class="navbar-container">
+    <a href="index.html#hero">
+      <img src="name_logo.png" alt="JyotirSetu Logo" class="site-logo" />
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#appointment" class="cta-button">For Appointment</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+  </div>
+</header>
+  
 <section class="service-title-section">
   <h1>Palmistry</h1>
 </section>
@@ -39,23 +58,25 @@
   <a href="index.html" class="home-button">Back to Home</a>
 </div>
 
-<section class="appointment" id="appointment">
-  <h2>Book Your Appointment</h2>
-  <form id="appointment-form" action="https://formsubmit.co/el/pululu" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="New Appointment from JyotirSetu Website">
-    <input type="hidden" name="_next" value="https://jyotirsetu.com/thankyou.html">
-    <input type="text" name="name" placeholder="Your Name" required>
+<section class="appointment-section" id="appointment">
+  <h2>BOOK YOUR APPOINTMENT</h2>
+  <form action="https://api.web3forms.com/submit" method="POST" id="form">
+    <input type="hidden" name="access_key" value="804164d8-502d-414e-be0d-59e6c0b14161" />
+    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+    <input type="text" name="name" placeholder="Your Full Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <input type="text" name="phone" placeholder="Phone Number" required>
-    <textarea name="message" placeholder="Your Concern" required></textarea>
-    <button type="submit" id="submit-button">Submit</button>
-    <div id="loading" style="display:none; margin-top: 10px;">Submitting...</div>
-    <div id="success-message" style="display:none; color: green; margin-top: 10px;">✅ Thank you! Form submitted successfully.</div>
-    <div id="error-message" style="display:none; color: red; margin-top: 10px;">⚡ Oops! Something went wrong. Please try again.</div>
+    <textarea name="message" rows="5" placeholder="Your Concern or Query" required></textarea>
+    <button type="submit" class="appointment-button">Send Message</button>
+    <p id="result" style="margin-top: 15px; color: #666; font-size: 14px; text-align: center;"></p>
   </form>
+  <div class="back-home">
+    <a href="index.html" class="home-button">Back to Home</a>
+  </div>
 </section>
-
+  
 <!-- Footer Section -->
 <footer class="footer">
   <p>© 2025 JyotirSetu. All rights reserved.</p>
