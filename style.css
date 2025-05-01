@@ -230,16 +230,13 @@ body {
   z-index: 1000;
   overflow: hidden;
 }
-/* Scrolling text */
+/* Animation for Announcement Text */
 #announcement-text {
-  display: inline-block;
-  white-space: nowrap;
-  /* Animate left-to-right scroll */
-  animation: scroll-left 15s linear infinite;
+  animation: fadeText 1s ease-in-out;
 }
-@keyframes scroll-left {
-  from { transform: translateX(100%); }
-  to   { transform: translateX(-100%); }
+@keyframes slideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
 }
 
 .service-video-section {
