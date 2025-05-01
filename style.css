@@ -406,3 +406,37 @@ body {
   padding: 15px 0;
   font-size: 14px;
 }
+.service-video-section {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #fffaf5;
+  text-align: center;
+}
+.service-video {
+  width: 90%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  filter: brightness(0.85) saturate(1.1);
+}
+.service-description {
+  background: #fdf6f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+.service-description h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #5f0f40;
+}
+.service-description p {
+  max-width: 850px;
+  margin: 10px auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
