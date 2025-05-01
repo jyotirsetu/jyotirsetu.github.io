@@ -288,25 +288,26 @@ body {
 
 /* Appointment Section */
 .appointment-section {
-  background: #f1eaff;
-  text-align: center:
-  padding: 60px 0;
+  background: #ede6fa; /* Home page par yahi light purple hai */
+  padding: 60px 0 40px 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .appointment-section h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  font-weight: 700;
   margin-bottom: 30px;
-  color: #5f0f40;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to right, #7b2cbf, #9d4edd);
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.10);
+  letter-spacing: 2px;
 }
 
 #form {
@@ -367,15 +368,34 @@ body {
   box-shadow: 0 6px 24px rgba(123, 44, 191, 0.18);
 }
 
+.back-home {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-button {
+  padding: 10px 25px;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.home-button:hover {
+  background-color: #023e8a;
+}
+
 @media (max-width: 500px) {
   .appointment-section {
-    padding: 30px 0;
+    padding: 30px 0 20px 0;
   }
   #form {
     padding: 18px 8px;
   }
 }
-
 /* WhatsApp Floating Button */
 .whatsapp-float {
   position: fixed;
