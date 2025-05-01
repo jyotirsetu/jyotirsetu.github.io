@@ -406,6 +406,16 @@ body {
   padding: 15px 0;
   font-size: 14px;
 }
+
+.service-heading {
+    text-align: center; /* Heading ko center kare */
+    margin-top: 60px;   /* Announcement bar ke niche gap */
+    font-size: 2.5rem;  /* Heading ka size */
+    font-weight: bold;  /* Bold text */
+    color: #3c096c;     /* Heading ka color */
+}
+
+
 .service-video-section {
   width: 100%;
   padding: 30px 0;
