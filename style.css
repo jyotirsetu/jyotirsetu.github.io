@@ -457,3 +457,10 @@ body {
 .home-button:hover {
   background-color: #023e8a;
 }
+@media (max-width: 500px) {
+  .appointment-section {
+    padding: 30px 0;
+  }
+  #form {
+    padding: 18px 8px;
+  }
