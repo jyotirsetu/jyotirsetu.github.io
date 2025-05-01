@@ -149,42 +149,6 @@ body {
   color: #5f0f40;
 }
 
-#appointment-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 30px;
-  background-color: #fff;         /* white card background */
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-#appointment-form input,
-#appointment-form textarea {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
-  resize: vertical;
-}
-#appointment-form button {
-  padding: 12px 25px;
-  background: #7b2cbf;            /* theme purple color */
-  color: #fff;
-  font-size: 16px;
-  border: none;
-  border-radius: 25px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-#appointment-form button:hover {
-  background: #5f0f40;
-}
-
 /* Footer */
 .footer {
   background-color: #3c096c;
@@ -413,55 +377,6 @@ body {
   body {
   margin: 0;
   padding: 0;
-}
-/* Announcement Bar (fixed, scrolling text) */
-.announcement-bar {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  background: #3c096c;
-  color: #fff;
-  text-align: center;
-  padding: 8px 20px;
-  font-weight: bold;
-  font-size: 14px;
-  z-index: 1001;
-  overflow: hidden;
-}
-#announcement-text {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll-left 15s linear infinite;
-}
-@keyframes scroll-left {
-  from { transform: translateX(100%); }
-  to   { transform: translateX(-100%); }
-}
-
-
-  .navbar {
-  position: fixed;
-  top: 32px; /* Move below the announcement bar */
-  width: 100%;
-  background: #3c096c;
-  z-index: 1000;
-  color: white;
-  padding: 10px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.navbar-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 12px 20px;
-}
-.site-logo {
-  width: 120px;
-  height: auto;
-  object-fit: contain;
 }
 
 .hero {
