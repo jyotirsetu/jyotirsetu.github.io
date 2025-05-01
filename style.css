@@ -218,16 +218,15 @@ body {
 
 /* Announcement Bar */
 .announcement-bar {
-  width: 100%;
-  background-color: #3c096c;
+  background: #472b8d;
   color: white;
-  text-align: center;
-  padding: 8px 0;
-  font-size: 14px;
-  font-weight: bold;
-  animation: slideDown 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: relative;
 }
-
 @keyframes pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.1); }
@@ -238,6 +237,15 @@ body {
   from { transform: translateY(-100%); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+.close-announcement {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
 .service-video-section {
   width: 100%;
   text-align: center;
