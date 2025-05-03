@@ -61,11 +61,12 @@ body {
 }
 
 .site-logo {
-  width: 120px;
+  width: 15vw;
+  max-width: 250px;
+  min-width: 120px;
   height: auto;
-  object-fit: contain;
+  vertical-align: middle;
 }
-
 .nav-links {
   display: flex;
   align-items: center;
@@ -102,17 +103,6 @@ body {
 
 .cta-button:hover {
   background: #9d4edd;
-}
-
-/* Burger Menu */
-.menu-toggle {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: white;
-  margin-left: 20px;
-  background: none;
-  border: none;
 }
 
 @media (max-width: 900px) {
@@ -157,7 +147,7 @@ body {
   position: relative;
   width: 100%;
   min-height: 60vh;
-  padding-top: 110px; /* adjust as needed for your navbar */
+  padding-top: 150px; /* adjust as needed for your navbar */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,7 +170,7 @@ body {
   object-fit: cover;
   object-position: center;
   filter: brightness(0.8) blur(0.5px);
-  position: sticky;
+  position: absolute;
   top: 0; left: 0;
 }
 .hero-content {
