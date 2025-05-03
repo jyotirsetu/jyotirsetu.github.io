@@ -14,8 +14,8 @@
   <span id="announcement-text"></span>
 </div>
 
-<section class="service-title-section">
-  <h1>Birth Chart Analysis</h1>
+<section class="service-page">
+  <h1 class="service-heading">Birth Chart Analysis</h1>
 </section>
 
 <section class="service-video-section">
@@ -39,24 +39,38 @@
   <a href="index.html" class="home-button">Back to Home</a>
 </div>
 
-<section class="appointment" id="appointment">
-  <h2>Book Your Appointment</h2>
-  <form id="appointment-form" action="https://formsubmit.co/el/pululu" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_subject" value="New Appointment from JyotirSetu Website">
-    <input type="hidden" name="_next" value="https://jyotirsetu.com/thankyou.html">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <input type="text" name="phone" placeholder="Phone Number" required>
-    <textarea name="message" placeholder="Your Concern" required></textarea>
-    <button type="submit" id="submit-button">Submit</button>
-    <div id="loading" style="display:none; margin-top: 10px;">Submitting...</div>
-    <div id="success-message" style="display:none; color: green; margin-top: 10px;">✅ Thank you! Form submitted successfully.</div>
-    <div id="error-message" style="display:none; color: red; margin-top: 10px;">⚡ Oops! Something went wrong. Please try again.</div>
+<!-- Appointment Form Section -->
+<</section>
+
+<section class="appointment" id="appointment"></section>
+  <h2 style= "text-align: center;"> Book Your Appointment</h2>
+  <form action="https://api.web3forms.com/submit" method="POST" id="form">
+    <input type="hidden" name="access_key" value="804164d8-502d-414e-be0d-59e6c0b14161" />
+    <input type="hidden" name="subject" value="New Appointment on JyotirSetu.com" />
+    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Your Full Name" required>
+    </div>
+
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+
+    <div class="form-group">
+      <input type="text" name="phone" placeholder="Phone Number" required>
+    </div>
+
+    <div class="form-group">
+      <textarea name="message" rows="5" placeholder="Your Concern or Query" required></textarea>
+    </div>
+
+    <button type="submit" class="appointment-button">Send Message</button>
+    <p id="result" style="margin-top: 15px; color: #666; font-size: 14px; text-align: center;"></p>
   </form>
 </section>
 
-<!-- Footer Section -->
+  <!-- Footer Section -->
 <footer class="footer">
   <p>© 2025 JyotirSetu. All rights reserved.</p>
   <p>Email: <a href="mailto:ask@jyotirsetu.com" style="color: #00b4d8;">ask@jyotirsetu.com</a> |
@@ -69,5 +83,5 @@
 </a>
 
 <script src="script.js"></script>
-
+</body>
 </html>
