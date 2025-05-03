@@ -60,12 +60,10 @@ body {
   height: 70px;
 }
 
-.site-logo1 {
-  width: 15vw;
-  max-width: 250px;
-  min-width: 120px;
-  height: auto;
-  vertical-align: middle;
+.site-logo {
+  width: 120px;    /* Change this value as needed */
+  height: auto;    /* Keeps the aspect ratio */
+  vertical-align: middle; /* Aligns with text if needed */
 }
 .nav-links {
   display: flex;
