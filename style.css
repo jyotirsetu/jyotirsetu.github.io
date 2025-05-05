@@ -110,12 +110,7 @@ body {
   .site-logo {
     width: 90px;
   }
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
+  
   .nav-links {
     position: fixed;
     top: 110px;
