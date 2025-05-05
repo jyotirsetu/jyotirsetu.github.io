@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - JyotirSetu</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <span id="announcement-text">
+      🔔 Welcome to JyotirSetu – Your gateway to trusted astrological insights. Book your appointment today!
+    </span>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="index.html#hero">
+        <img src="name_logo.png" alt="JyotirSetu Logo" class="site-logo" />
+      </a>
+      <nav class="nav-links">
+        <a href="index.html#services">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="index.html#appointment" class="cta-button">For Appointment</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Open Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="appointment-section" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+      <input type="hidden" name="access_key" value="804164d8-502d-414e-be0d-59e6c0b14161" />
+      <input type="hidden" name="subject" value="New Contact Submission from JyotirSetu" />
+      <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Phone Number" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="appointment-button">Send Message</button>
+      <p id="result" style="margin-top: 15px; color: #666; font-size: 14px; text-align: center;"></p>
+    </form>
+    <div style="margin: 30px 0 0 0;">
+      <p style="font-size: 1.1rem; color: #5f0f40;"><b>Email:</b> <a href="mailto:ask@jyotirsetu.com" style="color: #7b2cbf;">ask@jyotirsetu.com</a></p>
+      <p style="font-size: 1.1rem; color: #5f0f40;"><b>Phone:</b> <a href="tel:+919266991298" style="color: #7b2cbf;">+91 9266991298</a></p>
+      <p style="font-size: 1.1rem; color: #5f0f40;"><b>WhatsApp:</b> <a href="https://wa.me/919266991298" style="color: #7b2cbf;" target="_blank">Chat Now</a></p>
+    </div>
+    <div class="back-home">
+      <a href="index.html" class="home-button">Back to Home</a>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>© 2025 JyotirSetu. All rights reserved.</p>
+    <p>Email: <a href="mailto:ask@jyotirsetu.com" style="color: #00b4d8;">ask@jyotirsetu.com</a> |
+      Contact: <a href="tel:+919266991298" style="color: #00b4d8;">+91 9266991298</a></p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919266991298" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <img src="whatsapp-icon.png" alt="Chat on WhatsApp">
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
