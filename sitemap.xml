@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.jyotirsetu.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.jyotirsetu.com/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.jyotirsetu.com/contact.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.jyotirsetu.com/index.html#services</loc>
+    <priority>0.7</priority>
+  </url>
+  <!-- Example individual service pages, add/remove as per your site -->
+  <url>
+    <loc>https://www.jyotirsetu.com/tarot.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jyotirsetu.com/kundli.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jyotirsetu.com/numerology.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jyotirsetu.com/birthchart.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jyotirsetu.com/gemstone.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.jyotirsetu.com/palmistry.html</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>
